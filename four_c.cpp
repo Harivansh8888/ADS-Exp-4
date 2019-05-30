@@ -30,4 +30,17 @@ class student
   }
  friend class result;
 };
-
+ class result
+{
+   private:
+     float total,avrg;
+    public:
+    void calculate(student a)
+  {
+    cout<<"Name   :"<<a.n;
+    cout<<"\nSap id :"<<a.sap;
+    total = a.math+a.phy+a.chem+a.eng+a.ads+a.scm;
+    avrg =  (a.math+a.phy+a.chem+a.eng+a.ads+a.scm)/6.0;
+     cout<<"\nTotal Marks :"<<total<<endl<<"Average Marks :"<<avrg<<endl;
+   }
+};
