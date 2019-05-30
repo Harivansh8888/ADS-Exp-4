@@ -55,3 +55,36 @@ class Internal_Exam:public virtual Student
 		}
 
 };
+class External_Exam:public virtual Student
+{
+	public:
+		int external_eng,external_math,external_phys,external_chem,external_ped,external_comp;
+		get_external_marks()
+		{
+			cout<<"//ENTER ALL MARKS OUT OF 100//"<<endl;
+			cout<<endl;
+			cout<<"Enter External Marks for English:"<<endl;
+			cin>>external_eng;
+			cout<<"Enter External Marks for Mathematics:"<<endl;
+			cin>>external_math;
+			cout<<"Enter External Marks for Physics:"<<endl;
+			cin>>external_phys;
+			cout<<"Enter External Marks for Chemistry:"<<endl;
+			cin>>external_chem;
+			cout<<"Enter External Marks for Physical Education:"<<endl;
+			cin>>external_ped;
+			cout<<"Enter External Marks for Computers:"<<endl;
+			cin>>external_comp;
+		}
+		display_external_marks()
+		{
+			cout<<"External Marks are:"<<endl;
+			cout<<"English: "<<external_eng<<endl;
+			cout<<"Mathematics: "<<external_math<<endl;
+			cout<<"Physics: "<<external_phys<<endl;
+			cout<<"Chemistry: "<<external_chem<<endl;
+			cout<<"Physical Education: "<<external_ped<<endl;
+			cout<<"Computers: "<<external_comp<<endl;
+
+		}
+};
