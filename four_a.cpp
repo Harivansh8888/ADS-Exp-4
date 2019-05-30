@@ -88,3 +88,23 @@ class External_Exam:public virtual Student
 
 		}
 };
+class Result:public Internal_Exam,public External_Exam
+{
+	public:
+		show_result()
+		{
+		float total_eng=(0.4*internal_eng)+(0.6*external_eng);
+		float total_math=(0.4*internal_math)+(0.6*external_math);
+		float total_phys=(0.4*internal_phys)+(0.6*external_phys);
+		float total_chem=(0.4*internal_chem)+(0.6*external_chem);
+		float total_ped=(0.4*internal_ped)+(0.6*external_ped);
+		float total_comp=(0.4*internal_eng)+(0.6*external_eng);
+			cout<<"Total Marks are: "<<endl;
+			cout<<"English-->"<<total_eng<<endl;
+			cout<<"Mathematics-->"<<total_math<<endl;
+			cout<<"Physics-->"<<total_phys<<endl;
+			cout<<"Chemisrty-->"<<total_chem<<endl;
+			cout<<"Physical Education-->"<<total_ped<<endl;
+			cout<<"Computers-->"<<total_comp<<endl;
+		}
+};
