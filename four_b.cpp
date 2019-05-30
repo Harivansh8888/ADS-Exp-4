@@ -33,4 +33,13 @@ class sulphur
      friend void compund(oxygen&a1,hydrogen&b1,sulphur&c1);
                sulphur() {  cout<<"Enter molecular mass of sulphur";   cin>>s;  }
 
-}; 
+};
+void compound(oxygen&a1,hydrogen&b1,sulphur&c1)
+{
+ int a,b,c;
+   a=2*b1.h+c1.s+4*a1.o;
+   b=2*b1.h+c1.s+3*a1.o;
+   c=2*b1.h+2*c1.s+3*a1.o;
+  cout<<a<<endl<<b<<endl<<c;
+}
+
