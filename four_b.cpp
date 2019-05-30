@@ -43,3 +43,13 @@ void compound(oxygen&a1,hydrogen&b1,sulphur&c1)
   cout<<a<<endl<<b<<endl<<c;
 }
 
+
+int main()
+{
+   oxygen a;
+    hydrogen b;
+   sulphur c;
+    compound(a,b,c);
+return 0;
+}
+
