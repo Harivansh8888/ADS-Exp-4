@@ -108,3 +108,15 @@ class Result:public Internal_Exam,public External_Exam
 			cout<<"Computers-->"<<total_comp<<endl;
 		}
 };
+int main()
+{
+	Result s1;
+	s1.student_Details();
+	s1.display_Student_Details();
+	s1.get_internal_marks();
+	s1.display_internal_marks();
+	s1.get_external_marks();
+	s1.display_external_marks();
+	s1.show_result();
+	return 0;
+}
