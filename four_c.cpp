@@ -44,3 +44,12 @@ class student
      cout<<"\nTotal Marks :"<<total<<endl<<"Average Marks :"<<avrg<<endl;
    }
 };
+ int main(void)
+ {
+   student s;
+   s.input();
+   result r;
+   r.calculate(s);
+  return 0;
+ }
+
